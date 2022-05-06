@@ -1,8 +1,6 @@
 # Storing utility methods that will be used elsewhere in the code
 
-from fnmatch import translate
-
-
+# Método para, dado o valor contido em um dict, retorna a key correspondente
 def get_key(val,dict):
     for key,value in dict.items():
         if val == value:

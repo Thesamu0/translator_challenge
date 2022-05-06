@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.defaults import bad_request
 from django.core.exceptions import FieldError
 from django.http.response import JsonResponse
