@@ -1,3 +1,5 @@
 venv/
 *settings.py
 **__pycache__/
+morse_translator/translator/__pycache__/utils.cpython-310.pyc
+morse_translator/translator/__pycache__/*

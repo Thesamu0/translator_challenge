@@ -1,5 +1,8 @@
 # Storing utility methods that will be used elsewhere in the code
 
+from fnmatch import translate
+
+
 def get_key(val,dict):
     for key,value in dict.items():
         if val == value:
@@ -35,7 +38,18 @@ def morse_to_text(mystr):
         '-..-': 'x',
         '-.--': 'y',
         '--..': 'z',
-        ' ': ' '
+        ' ': ' ',
+        '': '',
+        '-----': '0',
+        '.----': '1',
+        '..---': '2',
+        '...--': '3',
+        '....-': '4',
+        '.....': '5',
+        '-....': '6',
+        '--...': '7',
+        '---..': '8',
+        '----.': '9'
     }
     splitstr = mystr.split('/')
     translated_str = ''
@@ -75,7 +89,18 @@ def text_to_morse(mystr):
         '-..-': 'x',
         '-.--': 'y',
         '--..': 'z',
-        ' ': ' '
+        ' ': ' ',
+        '': '',
+        '-----': '0',
+        '.----': '1',
+        '..---': '2',
+        '...--': '3',
+        '....-': '4',
+        '.....': '5',
+        '-....': '6',
+        '--...': '7',
+        '---..': '8',
+        '----.': '9'
     }
     translated_str = ''
 
